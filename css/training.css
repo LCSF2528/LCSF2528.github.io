@@ -121,7 +121,7 @@ footer a:hover {
     padding-bottom: 1%;
   }
   header img {
-    max-width: 50%;
+    width: 50%;
     height: auto;
   }
   /* Tablet viewport: Style rules for nav area */
@@ -161,6 +161,10 @@ footer a:hover {
     width: 25%;
     float: left;
     padding-bottom: 0;
+  }
+  header img {
+    width: 100%;
+    height: auto;
   }
 
   /* Desktop viewport: Style rules for nav area */
