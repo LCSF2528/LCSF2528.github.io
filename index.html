@@ -2,115 +2,94 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- cheezstacks is a cheese slices company -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cheezstacks - Home</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png" />
+    <title>Cheezstacks</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-
   <body>
-    <header>
-      <section class="banner">
-        <p class="banner-text">Free Shipping on orders over $50!</p>
-      </section>
-
-      <!-- Desktop Nav -->
-      <nav class="desktop-nav">
-        <a href="index.html"
-          ><img class="nav-brand" src="images/logo.png" alt="Official Logo"
-        /></a>
-        <ul class="nav-items">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="team.html" class="nav-link">Our Team</a>
-          </li>
-          <li class="nav-item">
-            <a href="specials.html" class="nav-link">Specials</a>
-          </li>
-          <li class="nav-item">
-            <a href="training.html" class="nav-link">Training</a>
-          </li>
-          <li class="nav-item">
-            <a href="media.html" class="nav-link">Media</a>
-          </li>
-          <li class="nav-item">
-            <a href="faqs.html" class="nav-link">FAQs</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
+    <div id="container">
       <!-- Mobile Nav -->
       <nav class="mobile-nav">
-        <a href="index.html">
-          <img class="nav-brand" src="images/logo.png" alt="Official Logo"
+        <div id="menu-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="team.html">Our Team</a>
+          <a href="specials.html">Specials</a>
+          <a href="training.html">Training</a>
+          <a href="media.html">Media</a>
+          <a href="faqs.html">FAQs</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+          <div>&#9776;</div>
+        </a>
+      </nav>
+
+      <header id="ch-logo">
+        <a href="index.html"
+          ><img src="images/logo.png" alt="Cheezstacks  logo"
         /></a>
+      </header>
 
-        <!-- hamburger with inline onclick -->
-        <span class="mobile-hamburger" onclick="toggleMenu()">&#9776;</span>
+      <!--Tablet, Desktop Nav -->
 
-        <ul class="mobile-nav-items" id="mobileMenu">
-          <li class="mobile-nav-item">
-            <a href="index.html" class="mobile-nav-link">Home</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a href="about.html" class="mobile-nav-link">About</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a href="team.html" class="mobile-nav-link">Our Team</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a href="specials.html" class="mobile-nav-link">Specials</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a href="training.html" class="mobile-nav-link">Training</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a href="media.html" class="mobile-nav-link">Media</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a href="faqs.html" class="mobile-nav-link">FAQs</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a href="" class="mobile-nav-link">Contact Us</a>
-          </li>
+      <nav class="tablet-desktop">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="specials.html">Specials</a></li>
+          <li><a href="training.html">Training</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
-    </header>
 
-    <main>
-      <img
-        src="images/hero.png"
-        alt="Cheezstacks Hero Image of land of cheese slices"
-      />
+      <!-- Hero Image -->
+      <div id="hero" class="tablet-desktop">
+        <img src="images/hero.jpg" alt="Cheese islands with stacks of cheese" />
+      </div>
 
-      <h1>Welcome to Cheezstacks</h1>
-      <p>Your one-stop shop for the best cheese slices!</p>
+      <!-- Use the main area to add the main content of the webpage -->
 
-      <!-- Write a long paragraph about the company -->
-      <p>
-        At Cheezstacks, we pride ourselves on being the premier destination for
-        cheese enthusiasts everywhere. Our journey began with a simple mission:
-        to provide high-quality, delicious cheese slices that bring joy to every
-        meal. Over the years, we have expanded our offerings to include a wide
-        variety of cheese types, from classic cheddar to exotic blends, ensuring
-        that there is something for every palate. Our commitment to quality is
-        unwavering; we source our cheese from trusted farms and producers who
-        share our passion for excellence. Whether you're looking to elevate your
-        sandwiches, enhance your recipes, or simply indulge in a cheesy treat,
-        Cheezstacks has you covered. Join us in our love for cheese and discover
-        the perfect slice for every occasion!
-      </p>
-    </main>
+      <main>
+        <h1>Welcome to Cheezstacks!</h1>
+        <p>
+          At Cheezstacks, we are passionate about bringing you the finest
+          selection of cheese slices from around the world. Whether you're a
+          cheese connoisseur or just looking for a tasty addition to your meals,
+          we've got you covered.
+        </p>
+      </main>
 
-    <footer>
-      <p>&copy; 2025 Cheezstacks. All rights reserved.</p>
-    </footer>
-    <script src="scripts/main.js"></script>
+      <!-- footer area -->
+      <footer>
+        <p>&copy; 2025 Cheezstacks. All rights reserved.</p>
+        <p><a href="mailto:info@cheezstacks.net">Request information</a></p>
+        <p>Oluwademilade Williams - C0965049</p>
+      </footer>
+    </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>

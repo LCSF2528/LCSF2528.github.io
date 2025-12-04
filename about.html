@@ -2,133 +2,152 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- cheezstacks is a cheese slices company -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cheezstacks - About Us</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png" />
+    <title>Cheezstacks</title>
     <link rel="stylesheet" href="css/about.css" />
   </head>
   <body>
-    <header>
-      <section class="banner">
-        <p class="banner-text">Free Shipping on orders over $50!</p>
-      </section>
-
-      <!-- Desktop Nav -->
-      <nav class="desktop-nav">
-        <a href="index.html"
-          ><img class="nav-brand" src="images/logo.png" alt="Official Logo"
-        /></a>
-        <ul class="nav-items">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="team.html" class="nav-link">Our Team</a>
-          </li>
-          <li class="nav-item">
-            <a href="specials.html" class="nav-link">Specials</a>
-          </li>
-          <li class="nav-item">
-            <a href="training.html" class="nav-link">Training</a>
-          </li>
-          <li class="nav-item">
-            <a href="media.html" class="nav-link">Media</a>
-          </li>
-          <li class="nav-item">
-            <a href="faqs.html" class="nav-link">FAQs</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Mobile Nav -->
+    <div id="container">
       <nav class="mobile-nav">
-        <a href="index.html">
-          <img class="nav-brand" src="images/logo.png" alt="Official Logo"
+        <div id="menu-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="team.html">Our Team</a>
+          <a href="specials.html">Specials</a>
+          <a href="training.html">Training</a>
+          <a href="media.html">Media</a>
+          <a href="faqs.html">FAQs</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+          <div>&#9776;</div>
+        </a>
+      </nav>
+      <header id="ch-logo">
+        <a href="index.html"
+          ><img src="images/logo.png" alt="Cheezstacks  logo"
         /></a>
+      </header>
 
-        <!-- hamburger with inline onclick -->
-        <span class="mobile-hamburger" onclick="toggleMenu()">&#9776;</span>
+      <!--Tablet, Desktop Nav -->
 
-        <ul class="mobile-nav-items" id="mobileMenu">
-          <li class="mobile-nav-item">
-            <a href="index.html" class="mobile-nav-link">Home</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a href="about.html" class="mobile-nav-link">About</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a href="team.html" class="mobile-nav-link">Our Team</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a href="specials.html" class="mobile-nav-link">Specials</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a href="training.html" class="mobile-nav-link">Training</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a href="media.html" class="mobile-nav-link">Media</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a href="faqs.html" class="mobile-nav-link">FAQs</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a href="" class="mobile-nav-link">Contact Us</a>
-          </li>
+      <nav class="tablet-desktop">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="specials.html">Specials</a></li>
+          <li><a href="training.html">Training</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
-    </header>
 
-    <main>
-      <img
-        src="images/hero.png"
-        alt="Cheezstacks Hero Image of land of cheese slices"
-      />
+      <!-- Hero Image -->
+      <div id="hero" class="tablet-desktop">
+        <img src="images/hero.jpg" alt="Cheese islands with stacks of cheese" />
+      </div>
 
-      <h1>About Cheezstacks</h1>
-      <p>
-        Cheezstacks was founded in 2020 with the mission to bring the cheesiest
-        delights to cheese lovers everywhere. Our team is dedicated to sourcing
-        the finest cheese slices and creating unique cheese stack combinations
-        that will tantalize your taste buds.
-      </p>
-      <p>
-        Whether you're looking for a quick snack or planning a gourmet cheese
-        platter, Cheezstacks has got you covered. Join us on our cheesy journey
-        and discover the joy of stacking flavors!
-      </p>
+      <!-- Use the main area to add the main content of the webpage -->
 
-      <h3>Our Mission</h3>
-      <p>
-        To provide high-quality, delicious cheese stacks that bring joy and
-        satisfaction to our customers while promoting the art of cheese
-        appreciation.
-      </p>
-      <h3>Our Values</h3>
-      <ul>
-        <li>
-          Quality: We prioritize the finest ingredients in all our cheese
-          stacks.
-        </li>
-        <li>
-          Customer Satisfaction: Our customers are at the heart of everything we
-          do.
-        </li>
-        <li>
-          Innovation: We continuously explore new flavors and combinations to
-          delight our customers.
-        </li>
-        <li>
-          Community: We believe in giving back and supporting local cheese
-          producers.
-        </li>
-      </ul>
-    </main>
-    <footer>
-      <p>&copy; 2024 Cheezstacks. All rights reserved.</p>
-    </footer>
+      <main>
+        <h2>About Cheezstackz</h2>
+        <p>
+          CheezStackz is a modern dairy brand dedicated to producing
+          high-quality, delicious, and affordable cheese slices for everyday
+          meals. We focus on creating smooth, flavorful slices that melt
+          perfectly and elevate any dish—whether it’s sandwiches, burgers,
+          snacks, or home-cooked recipes.
+        </p>
+        <h2>Our Story</h2>
+        <div class="grid">
+          <p>
+            Founded in 2010 by a group of cheese enthusiasts, CheezStackz began
+            with a simple mission: to make cheese slices that are both tasty and
+            convenient. Over the years, we have grown into a trusted brand known
+            for our commitment to quality ingredients, innovative flavors, and
+            sustainable practices.
+          </p>
+          <p>
+            At CheezStackz, we believe that cheese is more than just a food
+            item; it’s an experience that brings people together. Our team is
+            passionate about crafting cheese slices that not only taste great
+            but also inspire creativity in the kitchen. We are constantly
+            exploring new flavors and techniques to ensure that our products
+            meet the evolving tastes of our customers.
+          </p>
+          <p>
+            Times have changed, but Armstrong cheese has stood the test of time.
+            For generations, our master cheesemakers have passed along their
+            knowledge and expertise to bring you Cheddar cheese at its best.
+            From our family to yours, we are proud to be a part of your meals
+            and memories.
+          </p>
+        </div>
+        <h2>Why Choose Cheezstackz?</h2>
+        <ol>
+          <li>
+            <strong>Quality Ingredients:</strong> We source the finest milk and
+            natural ingredients to ensure our cheese slices are rich in flavor
+            and texture.
+          </li>
+          <li>
+            <strong>Variety of Flavors:</strong> From classic Cheddar to
+            adventurous blends like Jalapeño Jack and Smoked Gouda, we offer a
+            wide range of flavors to suit every palate.
+          </li>
+          <li>
+            <strong>Convenience:</strong> Our cheese slices are designed for
+            easy use, whether you’re making a quick snack or preparing a gourmet
+            meal.
+          </li>
+          <li>
+            <strong>Sustainability:</strong> We are committed to environmentally
+            friendly practices, from sourcing to packaging, to reduce our carbon
+            footprint.
+          </li>
+          <li>
+            <strong>Customer Satisfaction:</strong> We value our customers and
+            strive to exceed their expectations with every product we deliver.
+          </li>
+        </ol>
+        <h2>Our Guarantee</h2>
+        <p class="boldface">
+          At CheezStackz, we stand behind the quality of our cheese slices. If
+          you are not completely satisfied with your purchase, please contact
+          our customer service team for assistance. Your satisfaction is our top
+          priority!
+        </p>
+      </main>
+
+      <!-- footer area -->
+      <footer>
+        <p>&copy; 2025 Cheezstacks. All rights reserved.</p>
+        <p><a href="mailto:info@cheezstacks.net">Request information</a></p>
+        <p>Oluwademilade Williams - C0965049</p>
+      </footer>
+    </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>

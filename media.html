@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- cheezstacks is a cheese slices company -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png" />
+    <title>Cheezstacks</title>
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <div id="container">
+      <nav class="mobile-nav">
+        <div id="menu-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="team.html">Our Team</a>
+          <a href="specials.html">Specials</a>
+          <a href="training.html">Training</a>
+          <a href="media.html">Media</a>
+          <a href="faqs.html">FAQs</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+          <div>&#9776;</div>
+        </a>
+      </nav>
+      <header id="ch-logo">
+        <a href="index.html"
+          ><img src="images/logo.png" alt="Cheezstacks  logo"
+        /></a>
+      </header>
+
+      <!--Tablet, Desktop Nav -->
+
+      <nav class="tablet-desktop">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="specials.html">Specials</a></li>
+          <li><a href="training.html">Training</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hero Image -->
+      <div id="hero" class="tablet-desktop">
+        <img src="images/hero.jpg" alt="Cheese islands with stacks of cheese" />
+      </div>
+
+      <!-- Use the main area to add the main content of the webpage -->
+
+      <main>
+        <h2>A brief Word From Our Favourite COO!</h2>
+        <audio controls>
+          <source src="media/coo.mp3" type="audio/mpeg" />
+          <p>Your browser does not support the audio element.</p>
+        </audio>
+        <h2>A brief view from our Head Chef!</h2>
+        <video controls poster="media/poster.png">
+          <source src="media/head-chef.mp4" type="video/mp4" />
+          <p>Your browser does not support the video element.</p>
+        </video>
+      </main>
+
+      <!-- footer area -->
+      <footer>
+        <p>&copy; 2025 Cheezstacks. All rights reserved.</p>
+        <p><a href="mailto:info@cheezstacks.net">Request information</a></p>
+        <p>Oluwademilade Williams - C0965049</p>
+      </footer>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
