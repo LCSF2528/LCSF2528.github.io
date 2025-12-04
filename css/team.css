@@ -107,6 +107,36 @@ h2 {
   opacity: 1;
   box-shadow: 0 4px 8px #ccc;
 }
+article {
+  display: grid;
+  max-width: 100%;
+  margin: 0 auto;
+}
+article section {
+  border: #000 1px solid;
+  padding: 1em;
+  margin-bottom: 2em;
+  border-radius: 1em;
+  cursor: pointer;
+}
+article section:hover {
+  box-shadow: 0 4px 8px #ccc;
+  transform: translateY(10px);
+}
+
+article h3 {
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
+}
+article p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+  margin-bottom: 1.5em;
+}
+.article-heading {
+  text-align: center;
+  margin: 2em 0;
+}
 footer {
   background-color: #ffcc4d;
   color: #3a2f00;
@@ -213,6 +243,12 @@ footer a:hover {
   }
   main h1 {
     font-size: 1.8em;
+  }
+  article {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
   }
   .grid {
     display: grid;
