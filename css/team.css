@@ -261,6 +261,7 @@ footer a:hover {
 @media screen and (min-width: 1921px) {
   header {
     width: 20%;
+    padding-bottom: 2em;
   }
   #container {
     width: 1920px;

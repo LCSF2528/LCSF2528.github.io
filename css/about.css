@@ -206,6 +206,7 @@ footer a:hover {
 @media screen and (min-width: 1921px) {
   header {
     width: 20%;
+    padding: 2em;
   }
   nav li {
     font-size: 1em;
