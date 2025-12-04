@@ -129,6 +129,9 @@ form #submit {
   border-radius: 10px;
   text-align: center;
 }
+.inquiry-label {
+  margin-bottom: 1em;
+}
 footer {
   background-color: #ffcc4d;
   color: #3a2f00;

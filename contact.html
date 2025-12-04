@@ -101,6 +101,16 @@ Filename: contact.html
             <input type="text" id="name" name="name" required />
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required />
+            <label for="inquiry" class="inquiry-label"
+              >What type of inquiry do you have?</label
+            >
+            <select name="inquiry" id="inquiry">
+              <option value="" disabled selected>Select Inquiry Type</option>
+              <option value="general">General Question</option>
+              <option value="support">Support</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
